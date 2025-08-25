@@ -29,16 +29,9 @@ export default function Portfolio() {
       image: "/images/recommender.png",
     },
     {
-      title: "Phase 4",
+      title: "Book Recommender System",
       description:
-        "Exploratory data analysis and advanced analytics project showcasing SQL and data manipulation.",
-      tech: ["SQL", "Pandas", "Data Cleaning"],
-      link: "https://github.com/Isaac-Munyaka/Phase-4",
-    },
-    {
-      title: "My Book Recommender System",
-      description:
-        "Built a recommendation system for books using collaborative filtering and machine learning.",
+        "Built a recommendation system for books.",
       tech: ["Python", "Recommender Systems", "ML"],
       link: "https://github.com/Isaac-Munyaka/my-book-recommender-system",
     },
@@ -69,11 +62,7 @@ export default function Portfolio() {
         <p className="text-lg mb-6">
           Data Analytics || Business Intelligence || Machine Learning
         </p>
-        <button className="bg-white text-blue-700 font-semibold rounded-xl px-4 py-2">
-          <a href="/resume.pdf" download>
-            Download Resume
-          </a>
-        </button>
+       
       </section>
 
       {/* About Section */}
@@ -168,6 +157,7 @@ export default function Portfolio() {
           <a href="mailto:isaacmunyaka98@gmail.com" className="hover:underline">
             Email
           </a>
+          
           <a
             href="https://github.com/Isaac-Munyaka"
             target="_blank"
