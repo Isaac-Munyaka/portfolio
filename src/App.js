@@ -10,37 +10,37 @@ export default function App() {
       description:
         "Built a system for generating and displaying closed captions for videos. Focused on natural language processing and text synchronization.",
       tech: ["Python", "NLP", "Speech-to-Text"],
-      link: "https://github.com/Isaac-Munyaka/Closed-captions",
+      link: "https://github.com/Isaac-Munyaka/closed_captions",
     },
     {
       title: "Plotly Dashboards",
       description:
         "Developed interactive dashboards using Plotly for visualizing datasets and creating business intelligence insights.",
       tech: ["Plotly", "Python", "Data Visualization"],
-      link: "https://github.com/Isaac-Munyaka/plotly-dashboards",
+      link: "https://github.com/Isaac-Munyaka/plotly_dashboards",
       image: "/images/dashboard.png",
     },
     {
-      title: "Capstone Group 4",
+      title: "Job Recommender System",
       description:
         "Collaborated on a capstone project solving real-world data challenges through machine learning and analytics.",
       tech: ["Machine Learning", "EDA", "Python"],
-      link: "https://github.com/Isaac-Munyaka/Capstone-group-4",
+      link: "https://github.com/Isaac-Munyaka/CAPSTONE-Group2",
       image: "/images/recommender.png",
     },
     {
-      title: "Phase 4",
+      title: "Time series Analysis",
       description:
-        "Exploratory data analysis and advanced analytics project showcasing SQL and data manipulation.",
+        "Time series forecasting and analysis using Machine Learning.",
       tech: ["SQL", "Pandas", "Data Cleaning"],
-      link: "https://github.com/Isaac-Munyaka/Phase-4",
+      link: "https://github.com/Isaac-Munyaka/Phase_4_project",
     },
     {
       title: "My Book Recommender System",
       description:
         "Built a recommendation system for books using collaborative filtering and machine learning.",
       tech: ["Python", "Recommender Systems", "ML"],
-      link: "https://github.com/Isaac-Munyaka/my-book-recommender-system",
+      link: "https://github.com/Isaac-Munyaka/my_book_recommender_system",
     },
   ];
 
