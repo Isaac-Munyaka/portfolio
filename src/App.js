@@ -153,7 +153,7 @@ export default function Portfolio() {
           Let’s connect! I am open to opportunities in Data Analytics, BI, and ML.
         </p>
         <div className="space-x-6">
-          <ul>
+          
           <a href="mailto:isaacmunyaka98@gmail.com" className="hover:underline">
             Email
           </a>
@@ -173,7 +173,7 @@ export default function Portfolio() {
           >
             LinkedIn
           </a>
-          </ul>
+          
         </div>
       </section>
     </div>
