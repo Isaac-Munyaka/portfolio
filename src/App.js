@@ -18,7 +18,7 @@ export default function App() {
         "Developed interactive dashboards using Plotly for visualizing datasets and creating business intelligence insights.",
       tech: ["Plotly", "Python", "Data Visualization"],
       link: "https://github.com/Isaac-Munyaka/plotly_dashboards",
-      image: "/images/dashboard.png",
+      image: process.env.PUBLIC_URL + "/images/dashboard.png",
     },
     {
       title: "Job Recommender System",
@@ -26,7 +26,7 @@ export default function App() {
         "Collaborated on a capstone project solving real-world data challenges through machine learning and analytics.",
       tech: ["Machine Learning", "EDA", "Python"],
       link: "https://github.com/Isaac-Munyaka/CAPSTONE-Group2",
-      image: "/images/recommender.png",
+      image: process.env.PUBLIC_URL + "/images/recommender.png",
     },
     {
       title: "Time series Analysis",
@@ -59,7 +59,7 @@ export default function App() {
           Data Analytics || Business Intelligence || Machine Learning
         </p>
         <a
-          href="/resume.pdf"
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
           download
           className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl"
         >
