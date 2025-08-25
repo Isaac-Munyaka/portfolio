@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Portfolio() {
@@ -46,6 +44,17 @@ export default function Portfolio() {
     },
   ];
 
+  const skills = [
+    "Python",
+    "SQL",
+    "Tableau",
+    "Power BI",
+    "Data Storytelling",
+    "Machine Learning",
+    "EDA",
+    "Dashboards",
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
@@ -60,11 +69,11 @@ export default function Portfolio() {
         <p className="text-lg mb-6">
           Data Analytics || Business Intelligence || Machine Learning
         </p>
-        <Button className="bg-white text-blue-700 font-semibold rounded-xl">
+        <button className="bg-white text-blue-700 font-semibold rounded-xl px-4 py-2">
           <a href="/resume.pdf" download>
             Download Resume
           </a>
-        </Button>
+        </button>
       </section>
 
       {/* About Section */}
@@ -82,16 +91,7 @@ export default function Portfolio() {
       <section className="bg-gray-100 py-16 px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">Skills & Tools</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {[
-            "Python",
-            "SQL",
-            "Tableau",
-            "Power BI",
-            "Data Storytelling",
-            "Machine Learning",
-            "EDA",
-            "Dashboards",
-          ].map((skill, index) => (
+          {skills.map((skill, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -114,8 +114,8 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <Card className="shadow-lg rounded-2xl">
-                <CardContent className="p-6">
+              <div className="shadow-lg rounded-2xl bg-white">
+                <div className="p-6">
                   {proj.image && (
                     <img
                       src={proj.image}
@@ -137,8 +137,8 @@ export default function Portfolio() {
                   >
                     View on GitHub →
                   </a>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
