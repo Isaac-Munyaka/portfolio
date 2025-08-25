@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Portfolio() {
+export default function App() {
   const [lightboxImage, setLightboxImage] = useState(null);
 
   const projects = [
@@ -58,22 +58,31 @@ export default function Portfolio() {
         <p className="text-lg mb-6">
           Data Analytics || Business Intelligence || Machine Learning
         </p>
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl"
+        >
+          Download Resume
+        </a>
       </section>
 
       {/* About Section */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-semibold mb-6">About Me</h2>
         <p className="text-lg leading-relaxed">
-          I am passionate about data-driven decision-making through leveraging data and
-          making inferences that can be translated into substantial deliverables. I
-          specialize in dashboards, algorithms, software and LLMs that deliver
-          intelligent insights.
+          I am passionate about data-driven decision-making through leveraging
+          data and making inferences that can be translated into substantial
+          deliverables. I specialize in dashboards, algorithms, software and
+          LLMs that deliver intelligent insights.
         </p>
       </section>
 
       {/* Skills Section */}
       <section className="bg-gray-100 py-16 px-6">
-        <h2 className="text-3xl font-semibold text-center mb-8">Skills & Tools</h2>
+        <h2 className="text-3xl font-semibold text-center mb-8">
+          Skills & Tools
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             "Python",
@@ -118,7 +127,9 @@ export default function Portfolio() {
               )}
               <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
               <p className="mb-3 text-gray-600">{proj.description}</p>
-              <p className="text-sm text-gray-500 mb-4">{proj.tech.join(", ")}</p>
+              <p className="text-sm text-gray-500 mb-4">
+                {proj.tech.join(", ")}
+              </p>
               <a
                 href={proj.link}
                 target="_blank"
@@ -150,10 +161,10 @@ export default function Portfolio() {
       <section className="bg-indigo-700 text-white py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
         <p className="mb-6">
-          Let’s connect! I am open to opportunities in Data Analytics, BI, and ML.
+          Let’s connect! I am open to opportunities in Data Analytics, BI, and
+          ML.
         </p>
         <div className="space-x-6">
-          
           <a href="mailto:isaacmunyaka98@gmail.com" className="hover:underline">
             Email
           </a>
@@ -173,7 +184,6 @@ export default function Portfolio() {
           >
             LinkedIn
           </a>
-          
         </div>
       </section>
     </div>
