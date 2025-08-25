@@ -58,13 +58,6 @@ export default function Portfolio() {
         <p className="text-lg mb-6">
           Data Analytics || Business Intelligence || Machine Learning
         </p>
-        <a
-          href="/resume.pdf"
-          download
-          className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl"
-        >
-          Download Resume
-        </a>
       </section>
 
       {/* About Section */}
@@ -160,6 +153,7 @@ export default function Portfolio() {
           Let’s connect! I am open to opportunities in Data Analytics, BI, and ML.
         </p>
         <div className="space-x-6">
+          <ul>
           <a href="mailto:isaacmunyaka98@gmail.com" className="hover:underline">
             Email
           </a>
@@ -179,6 +173,7 @@ export default function Portfolio() {
           >
             LinkedIn
           </a>
+          </ul>
         </div>
       </section>
     </div>
