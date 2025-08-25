@@ -29,23 +29,19 @@ export default function Portfolio() {
       image: "/images/recommender.png",
     },
     {
-      title: "Book Recommender System",
+      title: "Phase 4",
       description:
-        "Built a recommendation system for books.",
+        "Exploratory data analysis and advanced analytics project showcasing SQL and data manipulation.",
+      tech: ["SQL", "Pandas", "Data Cleaning"],
+      link: "https://github.com/Isaac-Munyaka/Phase-4",
+    },
+    {
+      title: "My Book Recommender System",
+      description:
+        "Built a recommendation system for books using collaborative filtering and machine learning.",
       tech: ["Python", "Recommender Systems", "ML"],
       link: "https://github.com/Isaac-Munyaka/my-book-recommender-system",
     },
-  ];
-
-  const skills = [
-    "Python",
-    "SQL",
-    "Tableau",
-    "Power BI",
-    "Data Storytelling",
-    "Machine Learning",
-    "EDA",
-    "Dashboards",
   ];
 
   return (
@@ -62,7 +58,13 @@ export default function Portfolio() {
         <p className="text-lg mb-6">
           Data Analytics || Business Intelligence || Machine Learning
         </p>
-       
+        <a
+          href="/resume.pdf"
+          download
+          className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl"
+        >
+          Download Resume
+        </a>
       </section>
 
       {/* About Section */}
@@ -80,7 +82,16 @@ export default function Portfolio() {
       <section className="bg-gray-100 py-16 px-6">
         <h2 className="text-3xl font-semibold text-center mb-8">Skills & Tools</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {skills.map((skill, index) => (
+          {[
+            "Python",
+            "SQL",
+            "Tableau",
+            "Power BI",
+            "Data Storytelling",
+            "Machine Learning",
+            "EDA",
+            "Dashboards",
+          ].map((skill, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -102,32 +113,27 @@ export default function Portfolio() {
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              className="bg-white shadow rounded-2xl p-6"
             >
-              <div className="shadow-lg rounded-2xl bg-white">
-                <div className="p-6">
-                  {proj.image && (
-                    <img
-                      src={proj.image}
-                      alt={proj.title}
-                      className="rounded-lg mb-3 cursor-pointer hover:opacity-90"
-                      onClick={() => setLightboxImage(proj.image)}
-                    />
-                  )}
-                  <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
-                  <p className="mb-3 text-gray-600">{proj.description}</p>
-                  <p className="text-sm text-gray-500 mb-4">
-                    {proj.tech.join(", ")}
-                  </p>
-                  <a
-                    href={proj.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 font-semibold"
-                  >
-                    View on GitHub →
-                  </a>
-                </div>
-              </div>
+              {proj.image && (
+                <img
+                  src={proj.image}
+                  alt={proj.title}
+                  className="rounded-lg mb-3 cursor-pointer hover:opacity-90"
+                  onClick={() => setLightboxImage(proj.image)}
+                />
+              )}
+              <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
+              <p className="mb-3 text-gray-600">{proj.description}</p>
+              <p className="text-sm text-gray-500 mb-4">{proj.tech.join(", ")}</p>
+              <a
+                href={proj.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 font-semibold"
+              >
+                View on GitHub →
+              </a>
             </motion.div>
           ))}
         </div>
@@ -157,7 +163,6 @@ export default function Portfolio() {
           <a href="mailto:isaacmunyaka98@gmail.com" className="hover:underline">
             Email
           </a>
-          
           <a
             href="https://github.com/Isaac-Munyaka"
             target="_blank"
