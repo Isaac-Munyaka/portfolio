@@ -92,5 +92,31 @@
   <div class="footer">
     <p>Copyright <span class="far fa-copyright"></span>2025 | Isaac Munyaka</p>
   </div>
+
+  <div id="lightbox" class="lightbox" style="display:none;">
+  <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Full Size" />
+</div>
+
+<script>
+  // Open lightbox when any project image is clicked
+  document.querySelectorAll('.projects img').forEach(img => {
+    img.addEventListener('click', function() {
+      document.getElementById('lightbox-img').src = this.src;
+      document.getElementById('lightbox').style.display = 'flex';
+    });
+  });
+
+  // Close lightbox function
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.getElementById('lightbox-img').src = '';
+  }
+
+  // Optional: Close lightbox when clicking outside the image
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+</script>
 </body>
 </html>

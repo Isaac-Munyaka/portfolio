@@ -103,10 +103,17 @@ body{
   padding: 1.6em;
   background-color: rgba(235, 236, 238, 0.7);
 }
-.projects img{
-  height: 220px;
-  width: 400px;
-  padding: 3em;
+.projects img {
+  height: 320px;
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  padding: 1em;
+  cursor: pointer; /* Makes it clear images are clickable */
+  transition: box-shadow 0.2s;
+}
+.projects img:hover {
+  box-shadow: 0 4px 24px rgba(20,173,233,0.2);
 }
 .projects h2, h3{
   text-align: left;
@@ -220,6 +227,32 @@ body{
 .email-link:hover {
   color: rgb(20, 173, 233);
   text-decoration: underline;
+}
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(20,173,233,0.3);
+}
+.close-lightbox {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  font-size: 3em;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10000;
 }
 
 
