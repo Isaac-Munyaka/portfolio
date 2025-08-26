@@ -206,6 +206,21 @@ body{
   color: rgb(20, 173, 233);
   transform: scale(1.15);
 }
+.email-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: rgb(8, 96, 131);
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.email-link i {
+  margin-right: 8px;
+}
+.email-link:hover {
+  color: rgb(20, 173, 233);
+  text-decoration: underline;
+}
 
 
 @media screen and (max-width: 960px){
@@ -286,4 +301,3 @@ body{
     padding: 0;
   }
 }
-    
