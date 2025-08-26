@@ -41,12 +41,13 @@ body{
   transition: .3s;
   opacity: 0.6;
 }
-.welcome{
+.welcome {
   border: 1px solid;
   margin: 25vh 80vh 20vh 25vh;
   padding: 3vh;
-  background-color: snow;
-  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
 }
 .welcome h2{
   font-size: 2.5em;
@@ -75,10 +76,12 @@ body{
   background-color: rgb(20, 173, 233);
   transition: .4s;
 }
-.about{
+.about {
   display: flex;
-  background-color: rgba(8, 96, 131);
+  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
   padding: 2em 10em;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
 }
 #intro img{
   height: 300px;
@@ -191,7 +194,7 @@ body{
 
 .social-section h3 {
   font-family: 'Candal', sans-serif;
-  color: rgb(20, 173, 233);
+  color: rgb(19, 168, 226);
   margin-bottom: 12px;
   font-size: 1.5em;
 }
@@ -260,7 +263,7 @@ body{
 .social-section {
   background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
   border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(20,173,233,0.07);
+  box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
   padding: 32px 0;
   margin: 32px auto;
   max-width: 1100px;
