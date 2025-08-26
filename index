@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Candal&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#aboutId">About</a></li>
+      <li><a id="active"><span>Me.</span></a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contactMe">Contact</a></li>
+    </ul>
+  </div>
+  <div class="welcome">
+    <h2>Hi There!</h2>
+    <h1>My name is Isaac <span>.</span></h1>
+    <ul>
+      <a href="#"><span class="fab fa-linkedin"></span></a>
+      <a href="#"><span class="fab fa-twitter"></span></a>
+      <a href="#"><span class="fab fa-instagram"></span></a>
+      <a href="#"><span class="fab fa-google-plus"></span></a>
+    </ul>
+  </div>
+  <div id="aboutId" class="about">
+    <div id="intro">
+      <h2>About Me</h2>
+      <img src="./images/isaac.jpeg" alt="Isaac's picture">
+    </div>
+    <div id="intro2">
+      <p>Hello and welcome.</p>
+      <p>I am a Data Scientist who loves solving business problems through applying my Data Analytics and Business intelligence skills. I love adventure, sunsets and touching grass. </p>
+    </div>
+  </div>
+  <div id="project" class="projects">
+    <h2>Projects</h2>
+    <div class="plotly_dashboards">
+      <div>
+        <img src="./images/dashboard.jpg" alt="">
+      </div>
+      <div class="project_info">
+        <h3>Plotly Dashboard</h3>
+        <p>This project generates interactive dashboards using Python's Plotly library and exports them as static HTML files. The data used is also generated from scratch using Pandas and Numpy ONLY, and stored in CSV and JSON files.</p>
+        <p><a href="https://github.com/Isaac-Munyaka/plotly_dashboards">See Project</a></p>
+      </div>
+    </div>
+    <div class="job_recommendation_system">
+      <div>
+        <img src="./images/job_recommender.jpg" alt="">
+      </div>
+      <div class="job_recommender_info">
+        <h3>Job Recommendation System</h3>
+        <p>Collaborated on Capstone Project while at Moringa School, which optimized job recommendations by providing personalized job recommendations to job seekers to match them with the most suitable job postings. The target audience also included companies looking to recruit qualified candidates for job openings, as well as Recruitment Agencies that assist job seekers and employers in the recruitment process.</p>
+        <p><a href="https://github.com/Isaac-Munyaka/CAPSTONE-Group2">See Project</a></p>
+      </div>
+    </div>
+  </div>
+  <div id="contactMe" class="contact">
+    <h2>Contact Me</h2>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="contact_info" name="name" placeholder="Your Name..">
+    <label for="subject">Subject</label>
+    <input type="text" id="contact_info" name="subject" placeholder="Subject Of Massage..">
+    <label for="message">Message</label>
+    <input type="text" id="contact_info" name="message" placeholder="Message..">
+    <input type="submit" name="submit" id="submit">
+  </div>
+  <div class="footer">
+    <p>Copyright <span class="far fa-copyright"></span>2025 | Isaac Munyaka</p>
+  </div>
+</body>
+</html>

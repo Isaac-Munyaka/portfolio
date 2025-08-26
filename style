@@ -1,0 +1,278 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: snow;
+  box-sizing: border-box;
+  background-image: url('../images/atlas-green-Fz77XHwFYg0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 111vh 110vh;
+  background-position: right top;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.nav{
+  text-align: center;
+  padding-top: 20px;
+}
+.nav ul li{
+  display: inline-block;
+}
+.nav ul li a{
+  padding: 25px 45px 20px 45px;
+  margin-top: 25px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgb(8, 96, 131);
+  font-family: sans-serif;
+  transition: .3s;
+  text-decoration: none;
+}
+.nav ul li a span{
+  font-family:  'Alfa Slab One', cursive;
+  font-size: 25px;
+}
+#active{
+  border-bottom: 2px solid rgb(8, 96, 131);
+}
+.nav ul li a:hover{
+  background-color: rgb(20, 173, 233);
+  color: snow;
+  border-radius: 5px;
+  transition: .3s;
+  opacity: 0.6;
+}
+.welcome{
+  border: 1px solid;
+  margin: 25vh 80vh 20vh 25vh;
+  padding: 3vh;
+  background-color: snow;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.8);
+}
+.welcome h2{
+  font-size: 2.5em;
+  font-family: 'Candal', sans-serif;
+  color: rgb(20, 173, 233);
+}
+.welcome h1{
+  letter-spacing: 2px;
+  font-size: 3.5em;
+  font-family: 'Alfa Slab One', cursive;
+  color: rgb(8, 96, 131);
+}
+.welcome h1 span{
+  color: rgb(20, 173, 233);
+}
+.welcome a span{
+  border: 1px solid;
+  padding: 0.7em;
+  margin: 0.5em;
+  border-radius: 50%;
+  color: rgb(8, 96, 131);
+  transition: .4s;
+}
+.welcome a span:hover{
+  color: snow;
+  background-color: rgb(20, 173, 233);
+  transition: .4s;
+}
+.about{
+  display: flex;
+  background-color: rgba(8, 96, 131);
+  padding: 2em 10em;
+}
+#intro img{
+  height: 300px;
+  width: 200px;
+}
+#intro h2{
+  text-align: center;
+  font-family: 'Candal', sans-serif;
+  color: rgb(253, 253, 253);
+  font-size: 2.2em;
+}
+#intro2{
+  padding: 4.5em 2em;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: rgb(253, 253, 253);
+}
+#intro2 p a{
+  color: rgb(20, 173, 233);
+}
+.projects{
+  padding: 1.6em;
+  background-color: rgba(235, 236, 238, 0.7);
+}
+.projects img{
+  height: 220px;
+  width: 400px;
+  padding: 3em;
+}
+.projects h2, h3{
+  text-align: left;
+  font-family: 'Candal', sans-serif;
+  color: rgb(20, 173, 233);
+  text-decoration: underline;
+}
+.projects h2{
+  font-size: 2.5em;
+}
+.coffee{
+  flex-direction: row-reverse;
+}
+.coffee_info{
+  padding-left: 15em;
+}
+.galaxy_info{
+  padding-right: 15em;
+}
+.galaxy,.coffee{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  /* text-align: center; */
+}
+.coffee_info p a, .galaxy_info p a{
+  border: 1px solid rgb(8, 96, 131);
+  color: rgb(8, 96, 131);
+  padding: 0.5em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  transition: .3s;
+}
+.coffee_info p a:hover, .galaxy_info p a:hover{
+  background-color: rgba(20, 173, 233, 0.7);
+  color: snow;
+  border: none;
+  transition: .3s;
+}
+.contact{
+  padding: .7em;
+}
+.contact h2{
+  text-align: center;
+  font-family: 'Candal';
+  font-size: 2.2em;
+  color: rgb(20, 173, 233);
+  text-decoration: underline;
+}
+#contact_info{
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.2em;
+  border: none;
+  border-bottom: 1px solid rgb(8, 96, 131);
+  outline: none;
+}
+.footer{
+  text-align: center;
+  background-color: rgb(8, 96, 131);
+  padding: .6em;
+}
+#submit{
+  padding: 1.2em 2.5em;
+  text-transform: uppercase;
+  color: rgb(20, 173, 233);
+}
+#submit:hover{
+  background-color: rgb(8, 96, 131);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 960px){
+  body{
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .nav{
+    text-align: left;
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .nav ul li a{
+    padding: 30px;
+  }
+  .welcome{
+    margin: 0;
+    padding: 50px;
+    background-color: snow;
+    border: none;
+    box-shadow: none;
+  }
+  .about{
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(8, 96, 131);
+    padding: 0;
+  }
+  #intro img{
+    padding-left: 100px;
+  }
+  #intro2{
+    padding: 20px;
+  }
+  .galaxy, .coffee{
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects img{
+    height: 350px;
+    width: 100%;
+    padding: 0;
+  }
+  .coffee_info, .galaxy_info{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 560px){
+  body{
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .nav{
+    width: 100%;
+    background-color: whitesmoke;
+  }
+  .nav ul li a{
+    padding: 3px;
+  }
+  .welcome{
+    margin: 0;
+    padding: 50px;
+    background-color: snow;
+  }
+  .about{
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(8, 96, 131);
+    padding: 0;
+  }
+  #intro img{
+    padding-left: 100px;
+  }
+  #intro2{
+    padding: 20px;
+  }
+  .galaxy, .coffee{
+    flex-direction: column;
+    width: 100%;
+  }
+  .projects img{
+    width: 100%;
+    padding: 0;
+  }
+  .coffee_info, .galaxy_info{
+    width: 100%;
+    padding: 0;
+  }
+}
+
