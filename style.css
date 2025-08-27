@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: snow;
@@ -10,16 +10,16 @@ body{
   font-family: sans-serif;
   overflow-x: hidden;
 }
-.nav{
+
+.nav {
   text-align: center;
   padding-top: 20px;
 }
-.nav ul li{
+.nav ul li {
   display: inline-block;
 }
-.nav ul li a{
+.nav ul li a {
   padding: 25px 45px 20px 45px;
-  margin-top: 25px;
   font-size: 1.2em;
   font-weight: 500;
   color: rgb(8, 96, 131);
@@ -27,55 +27,16 @@ body{
   transition: .3s;
   text-decoration: none;
 }
-.nav ul li a span{
-  font-family:  'Alfa Slab One', cursive;
-  font-size: 25px;
-}
-#active{
+#active {
   border-bottom: 2px solid rgb(8, 96, 131);
 }
-.nav ul li a:hover{
+.nav ul li a:hover {
   background-color: rgb(20, 173, 233);
   color: snow;
   border-radius: 5px;
-  transition: .3s;
   opacity: 0.6;
 }
-.welcome {
-  border: 1px solid;
-  margin: 25vh 80vh 20vh 25vh;
-  padding: 3vh;
-  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
-  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.08);
-  border-radius: 18px;
-}
-.welcome h2{
-  font-size: 2.5em;
-  font-family: 'Candal', sans-serif;
-  color: rgb(20, 173, 233);
-}
-.welcome h1{
-  letter-spacing: 2px;
-  font-size: 3.5em;
-  font-family: 'Alfa Slab One', cursive;
-  color: rgb(33, 96, 121);
-}
-.welcome h1 span{
-  color: rgb(20, 173, 233);
-}
-.welcome a span{
-  border: 1px solid;
-  padding: 0.7em;
-  margin: 0.5em;
-  border-radius: 50%;
-  color: rgb(8, 96, 131);
-  transition: .4s;
-}
-.welcome a span:hover{
-  color: snow;
-  background-color: rgb(20, 173, 233);
-  transition: .4s;
-}
+
 .about {
   display: flex;
   background-color: #15698a;
@@ -84,26 +45,26 @@ body{
   box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
   color: #fff;
 }
-#intro img{
+#intro img {
   height: 300px;
   width: 200px;
 }
-#intro h2{
+#intro h2 {
   text-align: center;
   font-family: 'Candal', sans-serif;
-  color: rgb(253, 253, 253);
+  color: #fff;
   font-size: 2.2em;
 }
-#intro2{
+#intro2 {
   padding: 4.5em 2em;
-  font-family: sans-serif;
   font-size: 1.2em;
-  color: rgb(253, 253, 253);
+  color: #fff;
 }
-#intro2 p a{
+#intro2 p a {
   color: rgb(20, 173, 233);
 }
-.projects{
+
+.projects {
   padding: 1.6em;
   background-color: rgba(235, 236, 238, 0.7);
 }
@@ -113,55 +74,22 @@ body{
   max-width: 600px;
   object-fit: cover;
   padding: 1em;
-  cursor: pointer; /* Makes it clear images are clickable */
+  cursor: pointer;
   transition: box-shadow 0.2s;
 }
 .projects img:hover {
   box-shadow: 0 4px 24px rgba(20,173,233,0.2);
 }
-.projects h2, h3{
+.projects h2, .projects h3 {
   text-align: left;
   font-family: 'Candal', sans-serif;
   color: rgb(20, 173, 233);
   text-decoration: underline;
 }
-.projects h2{
+.projects h2 {
   font-size: 2.5em;
 }
 
-.contact{
-  padding: .7em;
-}
-.contact h2{
-  text-align: center;
-  font-family: 'Candal';
-  font-size: 2.2em;
-  color: rgb(20, 173, 233);
-  text-decoration: underline;
-}
-#contact_info{
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1.2em;
-  border: none;
-  border-bottom: 1px solid rgb(8, 96, 131);
-  outline: none;
-}
-.footer{
-  text-align: center;
-  background-color: rgb(8, 96, 131);
-  padding: .6em;
-}
-#submit{
-  padding: 1.2em 2.5em;
-  text-transform: uppercase;
-  color: rgb(20, 173, 233);
-}
-#submit:hover{
-  background-color: rgb(8, 96, 131);
-  color: whitesmoke;
-  cursor: pointer;
-}
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -186,33 +114,44 @@ body{
   margin: 0;
   font-weight: 600;
   font-size: 1rem;
+}
 
+.section,
+.social-section {
+  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
+  padding: 32px 0;
+  margin: 32px auto;
+  max-width: 1100px;
+}
+.section {
+  margin-bottom: 32px;
+}
+.social-section {
+  margin-bottom: 0;
 }
 .social-section {
   text-align: center;
   margin-bottom: 24px;
 }
-
 .social-section h3 {
   font-family: 'Candal', sans-serif;
   color: rgb(19, 168, 226);
   margin-bottom: 12px;
   font-size: 1.5em;
 }
-
 .social-links {
   display: flex;
   justify-content: center;
   gap: 32px;
   margin-top: 8px;
 }
-
 .social-links a {
   color: rgb(8, 96, 131);
   font-size: 2.5em;
   transition: color 0.3s, transform 0.3s;
 }
-
 .social-links a:hover {
   color: rgb(20, 173, 233);
   transform: scale(1.15);
@@ -232,6 +171,13 @@ body{
   color: rgb(20, 173, 233);
   text-decoration: underline;
 }
+
+.footer {
+  text-align: center;
+  background-color: rgb(8, 96, 131);
+  padding: .6em;
+}
+
 .lightbox {
   position: fixed;
   top: 0; left: 0;
@@ -259,99 +205,86 @@ body{
   z-index: 10000;
 }
 
-
-.section,
-.social-section {
-  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
+.see-more-card {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em 0;
+}
+.see-more-card a div {
+  background: #15698a;
+  color: #fff;
+  padding: 1.2em 2.5em;
   border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
-  padding: 32px 0;
-  margin: 32px auto;
-  max-width: 1100px;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 2px 12px rgba(20,173,233,0.13);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s, transform 0.3s;
 }
-
-/* Optional: Add a little spacing between sections */
-.section {
-  margin-bottom: 32px;
+.see-more-card a div:hover {
+  background: #20ade9;
+  transform: translateY(-4px) scale(1.04);
 }
-.social-section {
-  margin-bottom: 0;
+.see-more-card i {
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 960px){
-  body{
+  body {
     width: 100%;
     background-size: cover;
     overflow-x: hidden;
     box-sizing: border-box;
   }
-  .nav{
+  .nav {
     text-align: left;
     height: 50px;
     width: 100%;
     background-color: whitesmoke;
   }
-  .nav ul li a{
+  .nav ul li a {
     padding: 30px;
   }
-  .welcome{
-    margin: 0;
-    padding: 50px;
-    background-color: snow;
-    border: none;
-    box-shadow: none;
-  }
-  .about{
+  .about {
     flex-direction: column;
-    display: flex;
     background-color: #15698a;
     padding: 0;
   }
-  #intro img{
+  #intro img {
     padding-left: 100px;
   }
-  #intro2{
+  #intro2 {
     padding: 20px;
-
   }
-  
 }
 
 @media screen and (max-width: 560px){
-  body{
+  body {
     width: 100%;
     background-size: cover;
     overflow-x: hidden;
   }
-  .nav{
+  .nav {
     width: 100%;
     background-color: whitesmoke;
   }
-  .nav ul li a{
+  .nav ul li a {
     padding: 3px;
   }
-  .welcome{
-    margin: 0;
-    padding: 50px;
-    background-color: snow;
-  }
-  .about{
+  .about {
     flex-direction: column;
-    display: flex;
     background-color: #15698a;
     padding: 0;
   }
-  #intro img{
+  #intro img {
     padding-left: 100px;
   }
-  #intro2{
+  #intro2 {
     padding: 20px;
   }
-  .galaxy, .coffee{
-    flex-direction: column;
-    width: 100%;
-  }
-  .projects img{
+  .projects img {
     width: 100%;
     padding: 0;
   }
