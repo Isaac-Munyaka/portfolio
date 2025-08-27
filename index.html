@@ -156,8 +156,6 @@
     document.getElementById('lightbox').style.display = 'none';
     document.getElementById('lightbox-img').src = '';
   }
-
-  // Optional: Close lightbox when clicking outside the image
   document.getElementById('lightbox').addEventListener('click', function(e) {
     if (e.target === this) closeLightbox();
   });
