@@ -90,6 +90,23 @@ body {
   font-size: 2.5em;
 }
 
+.project-title-box {
+  background-color: #15698a;
+  border-radius: 18px;
+  padding: 0.7em 2em;
+  display: inline-block;
+  margin-bottom: 1em;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(20,173,233,0.12);
+}
+.project-title-box h3 {
+  margin: 0;
+  font-size: 1.3em;
+  font-family: 'Candal', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
