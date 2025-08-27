@@ -114,37 +114,23 @@ body {
 .projects h2 {
   font-size: 2.5em;
   font-family: 'Alfa Slab One', cursive, sans-serif;
-  color: #19a8e2; 
+  color: #fff;
   text-align: left;
-  text-decoration: none;
-  letter-spacing: 2px;
-  margin-bottom: 0.2em;
-  position: relative;
-}
-.projects h2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 7px;
-  background: #19a8e2;
-  border-radius: 4px;
-  margin-top: 0.1em;
-}
-
-.project-title-box {
-  background: none;
-  border-radius: 0;
-  padding: 0;
-  margin-bottom: 1em;
-  color: #19a8e2;
-  box-shadow: none;
+  background: #19789c;
+  border-radius: 18px;
+  padding: 0.5em 1.5em;
   display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+  box-shadow: 0 2px 12px rgba(20,173,233,0.13);
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .project-title-box h3 {
   margin: 0;
-  font-size: 2.5em;
-  font-family: 'Alfa Slab One', cursive, sans-serif;
+  font-size: 1.5em;
+  font-family: 'Candal', sans-serif;
   font-weight: bold;
   text-align: left;
   color: #19a8e2;
@@ -154,7 +140,7 @@ body {
   box-shadow: none;
   display: inline-block;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .skills-grid {
