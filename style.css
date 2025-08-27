@@ -284,6 +284,27 @@ body {
   font-size: 1.5em;
 }
 
+.see-project-btn {
+  display: inline-block;
+  background: #19a8e2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.6em 1.4em;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(20,173,233,0.10);
+  transition: background 0.3s, transform 0.3s;
+  margin-top: 0.5em;
+}
+.see-project-btn i {
+  margin-right: 8px;
+}
+.see-project-btn:hover {
+  background: #15698a;
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 960px){
   body {
     width: 100%;
