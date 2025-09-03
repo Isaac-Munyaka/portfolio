@@ -331,3 +331,77 @@ body {
   background: #15698a;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 960px) {
+  .about {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+  #intro img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  #intro2 {
+    padding: 2em 0.5em;
+  }
+  .section,
+  .social-section,
+  .projects {
+    padding: 24px 8px;
+    margin-bottom: 32px;
+    max-width: 100vw;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+  }
+  .projects img {
+    max-width: 100%;
+    height: auto;
+    padding: 0.5em;
+  }
+  .see-more-card a div {
+    padding: 1em 1em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about {
+    flex-direction: column;
+    padding: 1em 0.5em;
+  }
+  #intro img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  #intro2 {
+    padding: 1em 0.2em;
+    font-size: 1em;
+  }
+  .section,
+  .social-section,
+  .projects {
+    padding: 12px 2px;
+    margin-bottom: 20px;
+    max-width: 100vw;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .projects img {
+    max-width: 100%;
+    height: auto;
+    padding: 0.2em;
+  }
+  .see-more-card a div {
+    padding: 0.7em 0.5em;
+    font-size: 0.9em;
+  }
+}
