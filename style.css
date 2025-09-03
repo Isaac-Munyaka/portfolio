@@ -198,20 +198,18 @@ body {
 }
 
 .section,
-.social-section {
-  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
+.social-section,
+.projects {
+  margin-bottom: 48px;
+  padding: 40px 24px;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(19, 177, 240, 0.07);
-  padding: 32px 0;
-  margin: 32px auto;
+  background: linear-gradient(90deg, #e6f7fb 0%, #f2fbfd 100%);
   max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.section {
-  margin-bottom: 32px;
-}
-.social-section {
-  margin-bottom: 0;
-}
+
 .social-section {
   text-align: center;
   margin-bottom: 24px;
@@ -239,17 +237,18 @@ body {
 }
 .email-link {
   display: inline-block;
-  margin-bottom: 12px;
-  color: rgb(8, 96, 131);
+  margin-bottom: 18px;
+  color: #15698a;
   font-size: 1.2em;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: bold;
 }
 .email-link i {
   margin-right: 8px;
 }
 .email-link:hover {
-  color: rgb(20, 173, 233);
+  color: #19a8e2;
   text-decoration: underline;
 }
 
@@ -334,60 +333,36 @@ body {
 }
 
 @media screen and (max-width: 960px){
-  body {
-    width: 100%;
-    background-size: cover;
-    overflow-x: hidden;
-    box-sizing: border-box;
+  .section,
+  .social-section,
+  .projects {
+    padding: 24px 8px;
+    margin-bottom: 32px;
   }
-  .nav {
-    text-align: left;
-    height: 50px;
-    width: 100%;
-    background-color: whitesmoke;
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-  .nav ul li a {
-    padding: 30px;
-  }
-  .about {
-    flex-direction: column;
-    background-color: #15698a;
-    padding: 0;
-  }
-  #intro img {
-    padding-left: 100px;
-  }
-  #intro2 {
-    padding: 20px;
+  .project-card img {
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 560px){
-  body {
-    width: 100%;
-    background-size: cover;
-    overflow-x: hidden;
+  .section,
+  .social-section,
+  .projects {
+    padding: 16px 2px;
+    margin-bottom: 24px;
   }
-  .nav {
-    width: 100%;
-    background-color: whitesmoke;
+  .projects-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
-  .nav ul li a {
-    padding: 3px;
+  .project-card {
+    padding: 12px;
   }
-  .about {
-    flex-direction: column;
-    background-color: #15698a;
-    padding: 0;
-  }
-  #intro img {
-    padding-left: 100px;
-  }
-  #intro2 {
-    padding: 20px;
-  }
-  .projects img {
-    width: 100%;
-    padding: 0;
+  .project-card img {
+    max-width: 100%;
   }
 }
