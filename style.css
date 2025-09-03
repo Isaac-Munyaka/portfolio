@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Navigation */
 .nav {
   position: sticky;
   top: 0;
@@ -41,9 +42,6 @@ body {
   position: relative;
   display: inline-block;
 }
-#active {
-  border-bottom: 2px solid rgb(8, 96, 131);
-}
 .nav ul li a:hover {
   background: #e6f7fb;
   color: #19a8e2;
@@ -64,6 +62,7 @@ body {
   border-bottom: 2px solid rgb(8, 96, 131);
 }
 
+/* About Section */
 .about {
   display: flex;
   background-color: #15698a;
@@ -91,6 +90,7 @@ body {
   color: rgb(20, 173, 233);
 }
 
+/* Projects Section */
 .projects {
   padding: 1.6em;
   background-color: rgba(235, 236, 238, 0.7);
@@ -109,7 +109,6 @@ body {
 }
 .projects h2,
 .see-more-card a div {
-
   font-size: 2.5em;
   font-family: 'Alfa Slab One', cursive, sans-serif;
   color: #fff;
@@ -124,34 +123,16 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
 }
-
 .see-more-card a div::after {
   content: none;
   display: none;
 }
-
 .projects h3 {
   text-align: left;
   font-family: 'Candal', sans-serif;
   color: rgb(20, 173, 233);
   text-decoration: none;
 }
-.projects h2 {
-  font-size: 2.5em;
-  font-family: 'Alfa Slab One', cursive, sans-serif;
-  color: #fff;
-  text-align: left;
-  background: #19789c;
-  border-radius: 18px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 0.7em;
-  box-shadow: 0 2px 12px rgba(20,173,233,0.13);
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-
 .project-title-box h3 {
   margin: 0;
   font-size: 1.5em;
@@ -168,6 +149,7 @@ body {
   letter-spacing: 1px;
 }
 
+/* Skills Section */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -194,6 +176,7 @@ body {
   font-size: 1rem;
 }
 
+/* Section Spacing */
 .section,
 .social-section,
 .projects {
@@ -207,6 +190,7 @@ body {
   margin-right: auto;
 }
 
+/* Social Section */
 .social-section {
   text-align: center;
   margin-bottom: 24px;
@@ -249,12 +233,14 @@ body {
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   background-color: rgb(8, 96, 131);
   padding: .6em;
 }
 
+/* Lightbox */
 .lightbox {
   position: fixed;
   top: 0; left: 0;
@@ -282,6 +268,7 @@ body {
   z-index: 10000;
 }
 
+/* See More Card */
 .see-more-card {
   display: flex;
   justify-content: center;
@@ -308,6 +295,7 @@ body {
   font-size: 1.5em;
 }
 
+/* See Project Button */
 .see-project-btn {
   display: inline-block;
   background: #19a8e2;
@@ -329,6 +317,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 960px) {
   body {
     width: 100vw;
