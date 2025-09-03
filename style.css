@@ -331,38 +331,3 @@ body {
   background: #15698a;
   transform: scale(1.05);
 }
-
-@media screen and (max-width: 960px){
-  .section,
-  .social-section,
-  .projects {
-    padding: 24px 8px;
-    margin-bottom: 32px;
-  }
-  .projects-list {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  .project-card img {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 560px){
-  .section,
-  .social-section,
-  .projects {
-    padding: 16px 2px;
-    margin-bottom: 24px;
-  }
-  .projects-list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  .project-card {
-    padding: 12px;
-  }
-  .project-card img {
-    max-width: 100%;
-  }
-}
