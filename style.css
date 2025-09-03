@@ -333,9 +333,40 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  body {
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .nav {
+    text-align: left;
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: none;
+    padding: 0;
+  }
+  .nav ul {
+    gap: 0;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .nav ul li a {
+    padding: 12px 10px;
+    font-size: 1em;
+    border-radius: 0;
+    margin: 0;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: none;
+  }
   .about {
     flex-direction: column;
-    padding: 2em 1em;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
   #intro img {
     width: 100%;
@@ -343,45 +374,10 @@ body {
     max-width: 300px;
     margin: 0 auto;
     display: block;
+    padding: 0;
   }
   #intro2 {
-    padding: 2em 0.5em;
-  }
-  .section,
-  .social-section,
-  .projects {
-    padding: 24px 8px;
-    margin-bottom: 32px;
-    max-width: 100vw;
-  }
-  .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
-  }
-  .projects img {
-    max-width: 100%;
-    height: auto;
-    padding: 0.5em;
-  }
-  .see-more-card a div {
-    padding: 1em 1em;
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .about {
-    flex-direction: column;
-    padding: 1em 0.5em;
-  }
-  #intro img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-  #intro2 {
-    padding: 1em 0.2em;
+    padding: 20px;
     font-size: 1em;
   }
   .section,
@@ -390,6 +386,8 @@ body {
     padding: 12px 2px;
     margin-bottom: 20px;
     max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
   }
   .skills-grid {
     grid-template-columns: 1fr 1fr;
@@ -403,5 +401,75 @@ body {
   .see-more-card a div {
     padding: 0.7em 0.5em;
     font-size: 0.9em;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .nav {
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: none;
+    padding: 0;
+  }
+  .nav ul {
+    gap: 0;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .nav ul li a {
+    padding: 8px 6px;
+    font-size: 0.95em;
+    border-radius: 0;
+    margin: 0;
+    min-width: 60px;
+    text-align: center;
+    box-shadow: none;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #intro img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+  }
+  #intro2 {
+    padding: 10px;
+    font-size: 0.95em;
+  }
+  .section,
+  .social-section,
+  .projects {
+    padding: 8px 1px;
+    margin-bottom: 12px;
+    max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .projects img {
+    max-width: 100%;
+    height: auto;
+    padding: 0.1em;
+  }
+  .see-more-card a div {
+    padding: 0.5em 0.3em;
+    font-size: 0.85em;
+    border-radius: 10px;
   }
 }
