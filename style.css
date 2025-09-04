@@ -72,8 +72,8 @@ body {
   color: #fff;
 }
 #intro img {
-  height: 400px;
-  width: 200px;
+  height: 350px;
+  width: 230px;
 }
 #intro h2 {
   text-align: center;
@@ -376,7 +376,7 @@ body {
     width: 80vw;
     max-width: 260px;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
     margin: 0 auto 1em auto;
     display: block;
     object-fit: cover;
@@ -455,7 +455,7 @@ body {
     width: 85vw;
     max-width: 260px;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
     margin: 0 auto 1em auto;
     display: block;
     object-fit: cover;
