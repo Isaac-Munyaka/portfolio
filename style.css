@@ -419,7 +419,7 @@ body {
     text-align: center;
     box-shadow: none;
     padding: 0;
-    position: static;
+    position: sticky;
   }
   .nav ul {
     display: flex;
