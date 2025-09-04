@@ -370,11 +370,12 @@ body {
     width: 80vw;
     max-width: 260px;
     height: auto;
+    max-height: 350px;
     margin: 0 auto 1em auto;
     display: block;
     object-fit: cover;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 0;
   }
   #intro {
@@ -448,11 +449,12 @@ body {
     width: 85vw;
     max-width: 260px;
     height: auto;
+    max-height: 300px;
     margin: 0 auto 1em auto;
     display: block;
     object-fit: cover;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 12px;
     padding: 0;
   }
   #intro {
