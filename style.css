@@ -69,6 +69,82 @@ body {
   font-family: 'Candal', sans-serif;
 }
 
+/* Navigation Bar */
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(20,173,233,0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 2em;
+}
+
+.nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #15698a;
+  font-family: 'Candal', sans-serif;
+}
+
+/* Desktop Menu */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #15698a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #19a8e2;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: #15698a;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1em;
+  }
+  .nav-links li {
+    margin: 1em 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
 /* About Section */
 .about {
   display: flex;

@@ -9,14 +9,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <div class="nav">
+  <nav class="nav">
     <div class="logo">Isaac</div>
-    <ul>
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
     </ul>
-  </div>
-  
+  </nav>
+
   <div id="aboutId" class="about">
     <div id="intro">
       <h2>About Me</h2>
@@ -190,5 +193,14 @@
     if (e.target === this) closeLightbox();
   });
 </script>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
