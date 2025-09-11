@@ -68,6 +68,37 @@ body {
   margin-left: 1em;
   font-family: 'Candal', sans-serif;
 }
+/* uniform width */
+.container {
+  max-width: 1100px;  /* consistent width across sections */
+  margin: 0 auto;     /* centers everything */
+  padding: 20px;      /* some spacing inside */
+}
+
+/* harmonized contrasting colors */
+
+.about {
+  background: #15698a;   /* dark teal */
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.section, .projects {
+  background: #f5fafd;   /* light background */
+  color: #15698a;        /* text in same dark teal for harmony */
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.section h2, .projects h2 {
+  color: #15698a;        /* accent headings */
+  border-bottom: 3px solid #15698a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 
 /* About Section */
 .about {
