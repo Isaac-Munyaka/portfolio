@@ -310,6 +310,12 @@ body {
 .see-more-card a {
   text-decoration: none;  /* remove underline from link */
 }
+.see-more-card a,
+.see-more-card a:visited,
+.see-more-card a:hover,
+.see-more-card a:active {
+  text-decoration: none;
+}
 
 
 /* See Project Button */
