@@ -572,3 +572,17 @@ body {
     border-radius: 12px;
   }
 }
+/* Mobile full-width sections fix */
+@media screen and (max-width: 768px) {
+  .about,
+  .section,
+  .projects,
+  .social-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;   /* edge-to-edge look */
+    padding: 1.5em !important;     /* consistent spacing */
+  }
+}
+
