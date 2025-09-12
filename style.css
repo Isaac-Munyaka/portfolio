@@ -3,13 +3,16 @@ body {
   padding: 0;
   background-color: snow;
   box-sizing: border-box;
+
   background-image: url('../images/atlas-green-Fz77XHwFYg0-unsplash.jpg');
   background-repeat: no-repeat;
-  background-size: 111vh 110vh;
-  background-position: right top;
+  background-size: cover;         /* fills screen proportionally */
+  background-position: center;    /* keeps it centered */
+
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
 
 /* Navigation */
 .nav {
