@@ -572,17 +572,19 @@ body {
     border-radius: 12px;
   }
 }
-/* Mobile full-width sections fix */
+/* Force sections to fit full mobile screen width */
 @media screen and (max-width: 768px) {
   .about,
   .section,
   .projects,
   .social-section {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    border-radius: 0 !important;   /* edge-to-edge look */
-    padding: 1.5em !important;     /* consistent spacing */
+    width: 100vw;          /* full viewport width */
+    max-width: 100vw;      /* prevent shrinking */
+    margin: 0;             /* remove auto-centering */
+    padding-left: 0;       /* kill side padding */
+    padding-right: 0;
+    border-radius: 0;      /* flush edges */
   }
 }
+
 
