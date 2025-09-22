@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Candal&display=swap" rel="stylesheet">
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
   <div class="container">
@@ -108,7 +109,7 @@
       </p>
 
       <div class="projects-list">
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up">
           <div class="project_info">
             <div class="project-title-box">
               <h3>Plotly Dashboard</h3>
@@ -121,7 +122,7 @@
           </div>
         </div>
 
-        <div class="job_recommendation_system">
+        <div class="job_recommendation_system" data-aos="fade-up">
           <div class="job_recommender_info">
             <div class="project-title-box">
               <h3>Job Recommendation System</h3>
@@ -193,6 +194,10 @@
     document.getElementById('lightbox').addEventListener('click', function(e) {
       if (e.target === this) closeLightbox();
     });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
   </div>  
 </body>
