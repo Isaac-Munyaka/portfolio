@@ -341,8 +341,9 @@ body {
 @media screen and (max-width: 768px) {
   #intro img {
     width: 85vw;
-    max-width: 260px;
-    height: auto;
+    max-width: 220px;
+    height: 160px;      /* Set a fixed, smaller height */
+    object-fit: cover;  /* Crop if needed, keeps aspect ratio */
     margin: 0 auto 1em auto;
     display: block;
     border-radius: 12px;
