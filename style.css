@@ -110,8 +110,8 @@ body {
 }
 
 #intro img {
-  height: 300px;
-  width: 220px;
+  height: 315px;
+  width: 250px;
 }
 #intro h2 {
   text-align: center;
@@ -341,8 +341,8 @@ body {
 @media screen and (max-width: 768px) {
   #intro img {
     width: 85vw;
-    max-width: 220px;
-    height: 300px;      
+    max-width: 250px;
+    height: 315px;      
     object-fit: cover;  /* Crop if needed, keeps aspect ratio */
     margin: 0 auto 1em auto;
     display: block;
