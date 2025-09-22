@@ -110,8 +110,8 @@ body {
 }
 
 #intro img {
-  height: 200px;
-  width: 150px;
+  height: 270px;
+  width: 220px;
 }
 #intro h2 {
   text-align: center;
@@ -342,7 +342,7 @@ body {
   #intro img {
     width: 85vw;
     max-width: 220px;
-    height: 250px;      
+    height: 270px;      
     object-fit: cover;  /* Crop if needed, keeps aspect ratio */
     margin: 0 auto 1em auto;
     display: block;
