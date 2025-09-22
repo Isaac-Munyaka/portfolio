@@ -342,7 +342,7 @@ body {
   #intro img {
     width: 85vw;
     max-width: 220px;
-    height: 160px;      /* Set a fixed, smaller height */
+    height: 250px;      
     object-fit: cover;  /* Crop if needed, keeps aspect ratio */
     margin: 0 auto 1em auto;
     display: block;
