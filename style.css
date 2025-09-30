@@ -139,7 +139,7 @@ body::before {
 
 /* Projects */
 .projects {
-  background-color: rgba(235, 236, 238, 0.7);
+  background-color: rgb(255, 255, 255);
 }
 .projects-list {
   display: flex;
