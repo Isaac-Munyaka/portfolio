@@ -139,7 +139,7 @@ body::before {
 
 /* Projects */
 .projects {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(241, 236, 236);
 }
 .projects-list {
   display: flex;
@@ -239,18 +239,18 @@ body::before {
   margin-top: 8px;
 }
 .social-links a {
-  color: rgb(211, 222, 226);
+  color: rgb(245, 247, 248);
   font-size: 2.5em;
   transition: color 0.3s, transform 0.3s;
 }
 .social-links a:hover {
-  color: rgb(213, 227, 233);
+  color: rgb(234, 239, 241);
   transform: scale(1.15);
 }
 .email-link {
   display: inline-block;
   margin-bottom: 18px;
-  color: #d6e0e4;
+  color: #f8fbfc;
   font-size: 1.2em;
   text-decoration: none;
   transition: color 0.3s;
