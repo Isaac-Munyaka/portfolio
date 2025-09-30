@@ -4,7 +4,7 @@ body {
   background-color: snow;
   box-sizing: border-box;
 
-  background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1520&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-image: url('https://plus.unsplash.com/premium_photo-1667275280316-e6d9f94a0b89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGRhcmslMjBvY2VhbnxlbnwwfHwwfHx8MA%3D%3D'); 
   background-repeat: no-repeat;
   background-size: cover;         /* fills screen proportionally */
   background-position: center;    /* keeps it centered */
@@ -214,6 +214,13 @@ body::before {
   font-weight: 600;
   font-size: 1rem;
 }
+.section h2 {
+  color: #d3dfe4; /* Bright blue */
+  text-shadow: 0 2px 8px rgba(20,173,233,0.18), 0 1px 0 #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 
 /* Social Section */
 .social-section {
@@ -221,7 +228,7 @@ body::before {
 }
 .social-section h3 {
   font-family: 'Candal', sans-serif;
-  color: rgb(19, 168, 226);
+  color: rgb(201, 215, 221);
   margin-bottom: 12px;
   font-size: 1.5em;
 }
@@ -232,25 +239,25 @@ body::before {
   margin-top: 8px;
 }
 .social-links a {
-  color: rgb(8, 96, 131);
+  color: rgb(211, 222, 226);
   font-size: 2.5em;
   transition: color 0.3s, transform 0.3s;
 }
 .social-links a:hover {
-  color: rgb(20, 173, 233);
+  color: rgb(213, 227, 233);
   transform: scale(1.15);
 }
 .email-link {
   display: inline-block;
   margin-bottom: 18px;
-  color: #15698a;
+  color: #d6e0e4;
   font-size: 1.2em;
   text-decoration: none;
   transition: color 0.3s;
   font-weight: bold;
 }
 .email-link:hover {
-  color: #19a8e2;
+  color: #cbd8dd;
   text-decoration: underline;
 }
 
@@ -345,6 +352,7 @@ body::before {
   background: #15698a;
   transform: scale(1.05);
 }
+
 
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
