@@ -14,12 +14,13 @@
     <nav class="nav">
       <div class="logo">Isaac</div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#" onclick="showAllSections(); return false;">Home</a></li>
+        <li><a href="#skills" onclick="showSection('skills'); return false;">Skills</a></li>
+        <li><a href="#projects" onclick="showSection('projects'); return false;">Projects</a></li>
       </ul>
     </nav>
 
-    <div id="aboutId" class="about">
+    <div id="aboutId" class="about" data-display="flex">
       <div id="intro">
         <h2>About Me</h2>
         <img src="./images/isaac.jpeg" alt="Isaac's picture">
@@ -36,7 +37,7 @@
       </div>
     </div>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section" data-display="block">
     <h2 data-aos="fade-down">Top Skills & Tools</h2>
     <div class="skills-grid">
       <div data-aos="fade-up">
@@ -102,7 +103,7 @@
     </div>
   </section>
 
-    <div id="projects" class="projects">
+    <div id="projects" class="projects" data-display="block">
       <h2 data-aos="fade-down">Projects</h2>
       <p data-aos="fade-up">
         Here are some of the projects I have worked on, showcasing my skills in analytics, machine learning and dashboard development. These projects demonstrate my ability to solve real-world business problems, build interactive tools and deliver actionable insights across various domains.
@@ -145,7 +146,7 @@
         </a>
       </div>
     </div>
-    <div id="contactMe" class="social-section">
+    <div id="contactMe" class="social-section" data-display="block">
       <h3>Connect with me</h3>
       <p>
         <a href="mailto:isaacmunyaka98@gmail.com" class="email-link">
@@ -199,6 +200,34 @@
   <script>
     AOS.init();
   </script>
+  <script>
+  function showSection(sectionId) {
+    const sections = ['aboutId', 'skills', 'projects', 'contactMe'];
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    const showEl = document.getElementById(sectionId);
+    if (showEl) showEl.style.display = showEl.getAttribute('data-display') || 'block';
+
+    // Scroll to top and refresh AOS
+    window.scrollTo(0, 0);
+    if (typeof AOS !== 'undefined') {
+      AOS.refresh();
+    }
+  }
+  function showAllSections() {
+  ['aboutId', 'skills', 'projects', 'contactMe'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = el.getAttribute('data-display') || 'block';
+  });
+  window.scrollTo(0, 0);
+  if (typeof AOS !== 'undefined') {
+    AOS.refresh();
+  }
+}
+  window.scrollTo(0, 0);
+</script>
   </div>  
 </body>
 </html>
